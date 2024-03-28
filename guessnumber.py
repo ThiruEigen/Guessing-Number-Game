@@ -10,6 +10,9 @@ def guesshint(number,guess):
         return "Too Cold"
 def runguess():
     secretnumber = randomnumber()
+    print("Guess a random number ")
+    print("if it shows \"hot\" then your guess is high")
+    print("if it shows \"cold\" then your guess is low")
     while True:
         guess = int(input("Enter Number from 1 to 99: "))
         hint = guesshint(secretnumber,guess)
