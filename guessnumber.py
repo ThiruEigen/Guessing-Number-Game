@@ -3,11 +3,11 @@ def randomnumber():
     return random.randrange(1,99)
 def guesshint(number,guess):
     if guess > number:
-        print("Cold!")
+        return "Cold!"
     elif guess == number:
-        print("Correct")
+        return "Correct"
     else:
-        print("Too Hot!")
+        return "Too Hot!"
 def runguess():
     secretnumber = randomnumber()
     while True:
@@ -18,6 +18,6 @@ def runguess():
             break
         else:
             print(hint)
-            
-print(runguess())
+if __name__ = "__main__":
+    runguess()
     
